@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{85801592-1C06-FDF7-C281-92E74B3FCA4E}</ProjectGuid>
+	<ProjectGuid>{9E79DBE5-567A-8AAC-35AC-9B3A5B59B2AC}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\behaveRed.cs" />
      <Compile Include="Assets\script\PlayerCreate.cs" />
      <Compile Include="Assets\script\lvl1\PlayerControler.cs" />
      <Compile Include="Assets\script\lvl1\listener.cs" />
@@ -55,6 +54,7 @@
      <Compile Include="Assets\script\lvl2\behaveGrey.cs" />
      <Compile Include="Assets\script\lvl2\behaveGreyOut.cs" />
      <Compile Include="Assets\script\lvl2\behaveOut.cs" />
+     <Compile Include="Assets\script\lvl2\behaveRed.cs" />
      <Compile Include="Assets\script\lvl2\listenerLvl2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

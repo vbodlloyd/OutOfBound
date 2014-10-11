@@ -25,7 +25,7 @@ public class behave : MonoBehaviour {
 			thePosition.x = sortie.position.x+0.5f ;
 			thePosition.y = sortie.position.y-0.5f ;
 			rigid.gameObject.rigidbody2D.velocity = new Vector2(-1*rigid.gameObject.rigidbody2D.velocity.y,0f);
-			rigid.gameObject.rigidbody2D.AddForce(new Vector2(rigid.gameObject.rigidbody2D.velocity.y*2f,-160f));
+			rigid.gameObject.rigidbody2D.AddForce(new Vector2(/*rigid.gameObject.rigidbody2D.velocity.y*2f*/0f,-160f));
 			break;
 		case 3 :
 			thePosition.x = sortie.position.x+0.5f ;
@@ -35,7 +35,7 @@ public class behave : MonoBehaviour {
 			break;
 		case 4 :
 			thePosition.x = sortie.position.x-0.5f ;
-			thePosition.y = sortie.position.y+0.5f ;
+			thePosition.y = sortie.position.y-0.5f ;
 			rigid.gameObject.rigidbody2D.velocity = new Vector2(-1*rigid.gameObject.rigidbody2D.velocity.y,0f);
 			rigid.gameObject.rigidbody2D.AddForce(new Vector2(160f,0f));
 			break;

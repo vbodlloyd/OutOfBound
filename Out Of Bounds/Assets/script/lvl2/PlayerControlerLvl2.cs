@@ -87,15 +87,6 @@ public class PlayerControlerLvl2 : MonoBehaviour
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
 		
-		if (yellowChecked)
-			leftC = true;
-		
-		if (redChecked) 
-			redC=true;
-		
-		if (greyChecked1) 
-			grey1C=true;
-		
 		if(Physics2D.Linecast(transform.position, teleportCheck.position, 1 << LayerMask.NameToLayer("Dead")))
 			dead = true;
 		
@@ -132,106 +123,13 @@ public class PlayerControlerLvl2 : MonoBehaviour
 			jump = false;
 		}
 		
-		if (leftC) {
-			/*Vector3 thePositionC = transform.localPosition;
-			thePositionC.x = transform.position.y;
-			thePositionC.y =  5.5f - transform.position.x ;
-			transform.localPosition = thePositionC;*/
-			transform.Rotate(new Vector3(0f,0f,transform.localRotation.z -90));
-			switch (state) {
-			case 1 : Physics2D.gravity=new Vector2(-9.81f,0f);state = 2;
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0f);
-				rigidbody2D.AddForce(new Vector2(0f,-150f));
-				break;
-			case 2 : Physics2D.gravity=new Vector2(0f,9.81f);state = 3;
-				rigidbody2D.velocity = new Vector2(0f,rigidbody2D.velocity.y);
-				rigidbody2D.AddForce(new Vector2(0f,-350f));
-				break;
-			case 3 :Physics2D.gravity=new Vector2(9.81f,0f);state = 4;
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0f);
-				rigidbody2D.AddForce(new Vector2(-150f,0f));
-				break;
-			case 4 :Physics2D.gravity=new Vector2(0f,-9.81f);state = 1;
-				rigidbody2D.velocity = new Vector2(0f,rigidbody2D.velocity.y);
-				rigidbody2D.AddForce(new Vector2(0f,350f));
-				break;
-			}
-			
-			
-			leftC = false;
-			
-			AudioSource.PlayClipAtPoint(teleportClip, transform.position);
-		}
-		
-		if (redC) {
-			Vector3 thePositionC = transform.localPosition;
-			thePositionC.x = transform.position.x - transform.position.y;
-			thePositionC.y =  5.5f  ;
 
-			transform.localPosition = thePositionC;
-			transform.Rotate(new Vector3(0f,0f,transform.localRotation.z +90));
-			switch (state) {
-			case 1 : Physics2D.gravity=new Vector2(9.81f,0f);state = 4;
-				rigidbody2D.AddForce(new Vector2(0f,150f));
-				break;
-			case 2 : Physics2D.gravity=new Vector2(0f,-9.81f);state = 1;
-				rigidbody2D.AddForce(new Vector2(0f,350f));
-				break;
-			case 3 :Physics2D.gravity=new Vector2(-9.81f,0f);state = 2;
-				rigidbody2D.AddForce(new Vector2(0f,-150f));
-				break;
-			case 4 :Physics2D.gravity=new Vector2(0f,9.81f);state = 3;
-				rigidbody2D.AddForce(new Vector2(0f,-350f));
-				break;
-			}
-			
-			rigidbody2D.velocity = new Vector2(0f,rigidbody2D.velocity.y);
-			redC = false;
-			
-			AudioSource.PlayClipAtPoint(teleportClip, transform.position);
-		}
-		
-		if (grey1C) {
-			Vector3 thePositionC = transform.localPosition;
-			switch (state) {
-			case 1 : Physics2D.gravity=new Vector2(0f,9.81f);
-				thePositionC.y = 5.5f;
-				rigidbody2D.AddForce(new Vector2(0f,-110f));
-				state =3;
-				rigidbody2D.velocity = new Vector2(0f,rigidbody2D.velocity.y);
-				break;
-			case 2 : thePositionC.x = 11.5f;
-				Physics2D.gravity=new Vector2(9.81f,0f);
-				rigidbody2D.AddForce(new Vector2(-110f,0f));
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0f);
-				state = 4;
-				break;
-			case 3 :thePositionC.y = 0.5f;
-				Physics2D.gravity=new Vector2(0f,-9.81f);
-				rigidbody2D.AddForce(new Vector2(0f,110f));
-				state = 1;
-				rigidbody2D.velocity = new Vector2(0f,rigidbody2D.velocity.y);
-				break;
-			case 4 :thePositionC.x = 0.5f;
-				Physics2D.gravity=new Vector2(-9.81f,0f);
-				rigidbody2D.AddForce(new Vector2(110f,0f));
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0f);
-				state = 2;
-				break;
-			}
-			
-			AudioSource.PlayClipAtPoint(teleportClip, transform.position);
-			transform.localPosition = thePositionC;
-			transform.Rotate(new Vector3(0f,0f,-180));
-			grey1C = false;
-		}
 		
 		if (dead) {
 			AudioSource.PlayClipAtPoint(deadClip, transform.position);
 			
 			Destroy (gameObject);
-			
-			
+
 			
 		}
 	}
@@ -268,6 +166,7 @@ public class PlayerControlerLvl2 : MonoBehaviour
 			Physics2D.gravity=new Vector2(9.81f,0f);
 			break;
 		}
+		Debug.Log (state);
 	}
 	void reelFlip(float h){
 		if (state == 1 | state == 2| state ==4) {

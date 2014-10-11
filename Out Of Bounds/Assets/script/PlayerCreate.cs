@@ -26,9 +26,12 @@ public class PlayerCreate : MonoBehaviour {
 
 	void FixedUpdate(){
 		if (change) {
-			Physics2D.gravity = new Vector2 (0f,-9.81f);
+
 			change = false;
 			instance.velocity = new Vector2 (0f, 0f);
+			PlayerControlerLvl2.changeState(1);
+			PlayerControlerLvl2.changeState(1);
+			PlayerControlerLvl2.changeGravity();
 			
 		}
 	}
