@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\lvl2\behaveRed.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\lvl2\BehaviorYellowPortal.cs">
     <Files>
-      <File FileName="Assets\script\lvl2\behaveRed.cs" Line="31" Column="44" />
-      <File FileName="Assets\script\lvl2\behave.cs" Line="30" Column="11" />
-      <File FileName="Assets\script\lvl2\behaveGrey.cs" Line="19" Column="38" />
-      <File FileName="Assets\script\lvl2\behaveGreyOut.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\PlayerCreate.cs" Line="20" Column="26" />
-      <File FileName="Assets\script\lvl2\PlayerControlerLvl2.cs" Line="169" Column="21" />
+      <File FileName="Assets\script\lvl2\BehaviorYellowPortal.cs" Line="56" Column="72" />
+      <File FileName="Assets\script\PlayerCreate.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\lvl2\BehaviorRedPortal.cs" Line="39" Column="26" />
+      <File FileName="Assets\script\lvl2\BehaviorGreyPortal.cs" Line="36" Column="3" />
+      <File FileName="Assets\script\lvl2\PlayerControler.cs" Line="9" Column="85" />
+      <File FileName="Assets\script\lvl1\DoorAction.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -47,15 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\PlayerCreate.cs" />
-     <Compile Include="Assets\script\lvl1\PlayerControler.cs" />
-     <Compile Include="Assets\script\lvl1\listener.cs" />
-     <Compile Include="Assets\script\lvl2\PlayerControlerLvl2.cs" />
-     <Compile Include="Assets\script\lvl2\behave.cs" />
-     <Compile Include="Assets\script\lvl2\behaveGrey.cs" />
-     <Compile Include="Assets\script\lvl2\behaveGreyOut.cs" />
-     <Compile Include="Assets\script\lvl2\behaveOut.cs" />
-     <Compile Include="Assets\script\lvl2\behaveRed.cs" />
-     <Compile Include="Assets\script\lvl2\listenerLvl2.cs" />
+     <Compile Include="Assets\script\lvl1\DoorAction.cs" />
+     <Compile Include="Assets\script\lvl2\BehaviorGreyPortal.cs" />
+     <Compile Include="Assets\script\lvl2\BehaviorRedPortal.cs" />
+     <Compile Include="Assets\script\lvl2\BehaviorYellowPortal.cs" />
+     <Compile Include="Assets\script\lvl2\PlayerControler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
