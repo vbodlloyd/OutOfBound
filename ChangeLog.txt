@@ -1,0 +1,17 @@
+10/10/2014:
+-Add class : 
+		BehaviorYellowPortal : portal teleport at -90°
+		BehaviorRedPortal    : portal teleport at 90°
+		BehaviorGreyPortal   : portal teleport at 180°
+		PlayerCreate         : instantiate a character ( prefab )
+		PlayerControler 	 : handle the jump, rotate, death and gravity of the character
+		DoorAction           : action performed when passing through a door
+-Add prefab :
+		Character     : the hero with the PlayerControler script
+		Yellow_Portal : the yellow portal with the BehaviorYellowPortal script
+		Red_Portal    : the red portal with BehaviorRedPortal script
+		Grey_Portal   : the grey portal with BehaviorGreyPortal script
+		environment prefab ( use to make levels)
+-Add scene ;
+		game : name to change, the first level of the game
+		lvl2 : not a true level, a test scene
