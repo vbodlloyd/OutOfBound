@@ -5,9 +5,13 @@
 
 -Add class :
 		BehaviorBluePortal           : portal teleport with no rotation
-		BehaviorYellowPortalFromSide : special behavior for the yellow portal when the hero enter in by a side.
+		BehaviorYellowPortalFromSide : special behavior for the yellow portal when the hero enter in by a side
+		BehaviorBluePortalFromSide   : special behavior for the yellow portal when the hero enter in by a side
+		DoorAction2                  : script for the end of level2
 -Add Prefab :
 		Blue_Portal	: the blue portal with BehaviorBluePortal
+-Add Scene  :
+		level3
 
 
 10/11/2014:
@@ -25,5 +29,5 @@
 		Grey_Portal   : the grey portal with BehaviorGreyPortal script
 		environment prefab ( use to make levels)
 -Add scene ;
-		game : name to change, the first level of the game
-		lvl2 : not a true level, a test scene
+		game   : name to change, the first level of the game
+		level2 : not a true level, a test scene

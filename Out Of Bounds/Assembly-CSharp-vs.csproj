@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\script\PlayerCreate.cs" />
      <Compile Include="Assets\script\lvl1\DoorAction.cs" />
+     <Compile Include="Assets\script\lvl1\DoorAction2.cs" />
      <Compile Include="Assets\script\lvl2\BehaviorBluePortal.cs" />
+     <Compile Include="Assets\script\lvl2\BehaviorBluePortalFromSide.cs" />
      <Compile Include="Assets\script\lvl2\BehaviorGreyPortal.cs" />
      <Compile Include="Assets\script\lvl2\BehaviorRedPortal.cs" />
      <Compile Include="Assets\script\lvl2\BehaviorYellowPortal.cs" />

@@ -45,9 +45,9 @@ public class BehaviorYellowPortal : MonoBehaviour {
 			break;
 		case 2 : //gravity left
 			thePosition.x = exitPosX+0.5f ;
-			thePosition.y = exitPosY-0.5f ;
+			thePosition.y = exitPosY+0.5f ;
 			rigid.gameObject.rigidbody2D.velocity = new Vector2(-1*playerVelY,0f);
-			rigid.gameObject.rigidbody2D.AddForce(new Vector2(0f,-1*forceAdded));
+			rigid.gameObject.rigidbody2D.AddForce(new Vector2(forceAdded,0f));
 			break;
 		case 3 : //gravity up
 			thePosition.x = exitPosX+0.5f ;
