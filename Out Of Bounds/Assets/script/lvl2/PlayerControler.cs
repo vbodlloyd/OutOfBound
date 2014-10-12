@@ -43,9 +43,9 @@ public class PlayerControler : MonoBehaviour
 			a = 1;
 		if (a == 6)
 			a = 2;
-		if (a == -1)
+		if (a == 0)
 			a = 4;
-		if (a == -2)
+		if (a == -1)
 			a = 3;
 		previousState = state;
 		state = a;}

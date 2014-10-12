@@ -1,10 +1,22 @@
-10/10/2014:
+10/12/2014:
+-fix issues with changeState method in PlayerControler
+-add a variable in BehaviorGreyPortal : up ( 1 or -1), use to change the offset in the y position of the exit portal.
+-level2 scene over
+
+-Add class :
+		BehaviorBluePortal           : portal teleport with no rotation
+		BehaviorYellowPortalFromSide : special behavior for the yellow portal when the hero enter in by a side.
+-Add Prefab :
+		Blue_Portal	: the blue portal with BehaviorBluePortal
+
+
+10/11/2014:
 -Add class : 
 		BehaviorYellowPortal : portal teleport at -90°
 		BehaviorRedPortal    : portal teleport at 90°
 		BehaviorGreyPortal   : portal teleport at 180°
 		PlayerCreate         : instantiate a character ( prefab )
-		PlayerControler 	 : handle the jump, rotate, death and gravity of the character
+		PlayerControler      : handle the jump, rotate, death and gravity of the character
 		DoorAction           : action performed when passing through a door
 -Add prefab :
 		Character     : the hero with the PlayerControler script

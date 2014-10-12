@@ -18,6 +18,7 @@ public class BehaviorGreyPortal : MonoBehaviour {
 
 	public Transform exit;
 	public AudioClip teleportClip;
+	public int up = 1;
 	private float forceAdded = 160f;
 	
 	void OnTriggerEnter2D(Collider2D rigid){
@@ -50,10 +51,10 @@ public class BehaviorGreyPortal : MonoBehaviour {
 			rigid.gameObject.rigidbody2D.AddForce(new Vector2(forceAdded,0));
 			break;
 		case 3 : //gravity up
-			thePosition.x = exitPosX+0.5f ;
-			thePosition.y = exitPosY-0.5f;
-			rigid.gameObject.rigidbody2D.velocity = new Vector2(0f,playerVelY);
-			rigid.gameObject.rigidbody2D.AddForce(new Vector2(0f,-1*forceAdded));
+			thePosition.x = exitPosX+0.5f*up ;
+			thePosition.y = exitPosY-(0.5f*up);
+			rigid.gameObject.rigidbody2D.velocity = new Vector2(0f,up*playerVelY);
+			rigid.gameObject.rigidbody2D.AddForce(new Vector2(0f,up*-1*forceAdded));
 			break;
 		case 4 : //gravity right
 			thePosition.x = exitPosX-0.5f ;
