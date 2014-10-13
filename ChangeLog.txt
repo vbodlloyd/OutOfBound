@@ -1,3 +1,12 @@
+TODO://add a grounded condition to passe throught doors
+	 //add door locked and key for level4 
+
+10/13/2014:
+-add up condition in BehaviorGreyPortal for gravity state at 3
+
+-Add Scene  :
+		level4
+
 10/12/2014:
 -fix issues with changeState method in PlayerControler
 -add a variable in BehaviorGreyPortal : up ( 1 or -1), use to change the offset in the y position of the exit portal.

@@ -40,8 +40,8 @@ public class BehaviorBluePortal : MonoBehaviour {
 			thePosition.y = exitPosY-0.5f ;
 			break;
 		case 3 : //gravity up
-			thePosition.x = exitPosX+0.5f ;
-			thePosition.y = exitPosY-0.5f ;
+			thePosition.x = exitPosX-0.5f ;
+			thePosition.y = exitPosY+0.5f ;
 			break;
 		case 4 : //gravity right
 			thePosition.x = exitPosX-0.5f ;

@@ -39,10 +39,10 @@ public class BehaviorGreyPortal : MonoBehaviour {
 		
 		switch (statePlayer) {
 		case 1 : //gravity down
-			thePosition.x = exitPosX-0.5f ;
-			thePosition.y = exitPosY+0.5f;
-			rigid.gameObject.rigidbody2D.velocity = new Vector2(0f,playerVelY);
-			rigid.gameObject.rigidbody2D.AddForce(new Vector2(0f,forceAdded));
+			thePosition.x = exitPosX-up*0.5f ;
+			thePosition.y = exitPosY+up*0.5f;
+			rigid.gameObject.rigidbody2D.velocity = new Vector2(0f,up*playerVelY);
+			rigid.gameObject.rigidbody2D.AddForce(new Vector2(0f,up*forceAdded));
 			break;
 		case 2 : //gravity left
 			thePosition.x = exitPosX+0.5f ;
