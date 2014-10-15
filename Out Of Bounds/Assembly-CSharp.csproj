@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DoorAction3.cs" />
+     <Compile Include="Assets\KeyAction.cs" />
      <Compile Include="Assets\script\PlayerCreate.cs" />
      <Compile Include="Assets\script\lvl1\DoorAction.cs" />
      <Compile Include="Assets\script\lvl1\DoorAction2.cs" />

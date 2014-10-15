@@ -1,5 +1,13 @@
 TODO://add a grounded condition to passe throught doors
-	 //add door locked and key for level4 
+	 // add sound door locked, add sound door unlocked
+
+10/15/2014:
+-add key/door locked
+
+-Add class :
+		KeyAction   : action performed when jump on a key
+		DoorAction3 : action of the level 4 door, locked at init, unlock by the key
+
 
 10/13/2014:
 -add up condition in BehaviorGreyPortal for gravity state at 3
