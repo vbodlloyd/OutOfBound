@@ -1,6 +1,12 @@
 TODO://add a grounded condition to passe throught doors
 	 // add sound door locked, add sound door unlocked
+     //create a key prefab
 
+10/26/2014:
+-add script :
+		PlayerCreateWithKey : instantiate a hero (prefab) and a key (prefab)
+        
+        
 10/15/2014:
 -add key/door locked
 
